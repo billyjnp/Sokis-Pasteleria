@@ -32,12 +32,108 @@ header {
 
 .franjaSuperior {
     text-align: center;
-	padding-top: 10px;
+    padding-top: 10px;
     padding-bottom: 5px;
     font-size: 20px; 
     color: black;
-    font-weight: bold; 
+    font-weight: bold;
 } 
+
+.disappear span {
+    display: inline-block;
+    color:transparent;
+    text-shadow: 0px 0px 0px black;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.disappear span:nth-child(1){
+    animation-name: disappearleft;
+}
+
+.disappear span:nth-child(2){
+    animation-name: disappearleft;
+    animation-delay: .3s;
+}
+
+.disappear span:nth-child(3){
+    animation-name: disappearight;
+    animation-delay: .6s;
+}
+
+.disappear span:nth-child(4){
+    animation-name: disappearleft;
+    animation-delay: .9s;
+}
+
+.disappear span:nth-child(5){
+    animation-name: disappearight;
+    animation-delay: 1.2s;
+}
+
+.disappear span:nth-child(6){
+    animation-name: disappearight;
+    animation-delay: 1.5s;
+}
+
+.disappear span:nth-child(7){
+    animation-name: disappearleft;
+    animation-delay: 1.8s;
+}
+
+.disappear span:nth-child(8){
+    animation-name: disappearight;
+    animation-delay: 2.1s; 
+}
+
+.disappear span:nth-child(9){
+    animation-name: disappearight;
+    animation-delay: 2.4s;
+}
+
+.disappear span:nth-child(10){
+    animation-name: disappearight;
+    animation-delay: 2.7s;
+}
+
+.disappear span:nth-child(11){
+    animation-name: disappearight;
+    animation-delay: 3s;
+}
+
+.disappear span:nth-child(12){
+    animation-name: disappearight;
+    animation-delay: 3.3s;
+}
+
+.disappear span:nth-child(13){
+    animation-name: disappearight;
+    animation-delay: 3.6s;
+}
+
+.disappear span:nth-child(14){
+    animation-name: disappearight;
+    animation-delay: 3.9s;
+}
+
+.disappear span:nth-child(15){
+    animation-name: disappearight;
+    animation-delay: 4.2s;
+}
+
+@keyframes disappearleft{
+    50% {transform: skew(50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+        opacity: 0;
+    }
+}
+
+@keyframes disappearight{
+    50% {transform: skew(-50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+        opacity: 0;
+    }
+}
 
 .SocialMedia {
     background-color: trasnsparent; 
