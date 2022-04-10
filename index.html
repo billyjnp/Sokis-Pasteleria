@@ -7,218 +7,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soki's Pasteleria Website</title>
     <link rel="shortcut icon" href="images/iconos/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <header>
-        <!-- ANIMACION-->
-        <!-- <div class="franjaSuperior">
-            <label>ENVIOS A TODA CABA</label>
-        </div> -->
 
-        <div class="franjaSuperior">
-            <div class="disappear">
-                <label><span>E</span><span>N</span><span>V</span><span>I</span><span>O</span><span>S</span> <span>A</span> <span>T</span><span>O</span><span>D</span><span>A</span> <span>C</span><span>A</span><span>B</span><span>A</span></label>
+    <div class="container-fluid">
+        <div class="row">
+            <header>
+                <div class="franjaSuperior">
+                    <div class="disappear">
+                        <label><span>E</span><span>N</span><span>V</span><span>I</span><span>O</span><span>S</span>
+                            <span>A</span> <span>T</span><span>O</span><span>D</span><span>A</span>
+                            <span>C</span><span>A</span><span>B</span><span>A</span></label>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="SocialMedia">
+                    <div class="SocialMedia_Iconos">
+                        <a class="Iconos" href="https://web.whatsapp.com/" target="_blank">
+                            <img src="images/iconos/whatsappicon.png" alt="whatsapp icon" />
+                        </a>
+                        <a class="Iconos" href="https://es-la.facebook.com/" target="_blank">
+                            <img src="images/iconos/facebookicon.png" alt="Facebook icon" />
+                        </a>
+                        <a class="Iconos" href="https://www.instagram.com/?hl=es-la" target="_blank">
+                            <img src="images/iconos/instagramicon.png" alt="Instagram icon" />
+                        </a>
+                        <a class="Iconos" href="https://www.youtube.com/" target="_blank">
+                            <img src="images/iconos/youtubeicon.png" alt="YouTube icon" />
+                        </a>
+                    </div>
+                    <nav class="logo">
+                        <div id="menu-mobile" class="menu-mobile-icon">
+                            <a href="#">
+                                <img class="menu-mobile-icon" src="images/iconos/menumobile.jpg" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="logoSuperior">
+                            <a href="#">
+                                <label class="pre-titulo">Soki'</label>
+                                <label class="post-titulo">s</label>
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="navegacion">
+                            <ul class="navegacion_menu">
+                                <li id="menu1"><a href="nosotros.html">NOSOTROS</a></li>
+                                <li id="menu1"><a href="catalogo.html">CATALOGO</a></li>
+                                <li id="menu2"></li>
+                                <li id="menu1"><a href="locales.html">LOCALES</a></li>
+                                <li id="menu1"><a href="contacto.html">CONTACTO</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="row">
+            <div class="container-slider">
+                <ul class="slider">
+                    <li id="slide1">
+                        <img src="images/slide/s1.jpg">
+                    </li>
+                    <li id="slide2">
+                        <img src="images/slide/s2.jpg">
+                    </li>
+                    <li id="slide3">
+                        <img src="images/slide/s3.jpg">
+                    </li>
+                </ul>
+                <ul class="menu">
+                    <li>
+                        <a href="#slide1"></a>
+                    </li>
+                    <li>
+                        <a href="#slide2"></a>
+                    </li>
+                    <li>
+                        <a href="#slide3"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- GRID -->
+            <div class="grid">
+                <!-- PRIMERA FILA-->
+                <div></div>
+                <div></div>
+                <div>
+                    <h2>CATALOGO</h2>
+                </div>
+                <div></div>
+                <div></div>
+                <!-- SEGUNDA FILA -->
+                <div></div>
+                <div>
+                    <img id="fotoproducto" src="images/productos/producto1/cupcakes1.jpg" alt="Foto de Producto1" />
+                    <a id="botones1" class="botones-productos" href="catalogo.html">CUPCAKES</a>
+                </div>
+                <div>
+                    <img id="fotoproducto" src="images/productos/producto2/cookies1.jpg" alt="Foto de Producto2">
+                    <a id="botones2" class="botones-productos" href="catalogo.html">GALLETAS</a>
+                </div>
+                <div>
+                    <img id="fotoproducto" src="images/productos/producto3/cake.jpg" alt="Foto de Producto2">
+                    <a id="botones3" class="botones-productos" href="catalogo.html">TORTAS</a>
+                </div>
+                <div></div>
+            </div>
+
+            <div class="contenedor-formulario margen-izq-20">
+                <h2 class="margen-top-100">CONTACTO</h2>
+                <form action="#" method="post">
+                    <table cellpadding="10" cellspacing="10">
+                        <tr>
+                            <td>NOMBRE:</td>
+                            <td>
+                                <input type="text" value="" id="nombre" name="nombre"
+                                    placeholder="Ingresá acá tu Nombre!" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EMAIL:</td>
+                            <td>
+                                <input type="email" value="" id="email" name="email"
+                                    placeholder="Ingresá acá tu Email!" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>TELEFONO:</td>
+                            <td>
+                                <input type="text" value="" id="telefono" placeholder="Ingresá acá tu Telefono!" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MENSAJE:</td>
+                            <td>
+                                <textarea id="mensaje" placeholder="Ingresá acá tu Mensaje!" rows="4"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input class="botones-formulario" type="reset" value="Restablecer" />
+                                <input class="botones-formulario" type="submit" value="Enviar" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
-        
-        <hr>
-        <div class="SocialMedia">
-            <div class="SocialMedia_Iconos">
-                <a class="Iconos" href="https://web.whatsapp.com/" target="_blank">
-                    <img src="images/iconos/whatsappicon.png" alt="whatsapp icon" />
-                </a>
-                <a class="Iconos" href="https://es-la.facebook.com/" target="_blank">
-                    <img src="images/iconos/facebookicon.png" alt="Facebook icon" />
-                </a>
-                <a class="Iconos" href="https://www.instagram.com/?hl=es-la" target="_blank">
-                    <img src="images/iconos/instagramicon.png" alt="Instagram icon" />
-                </a>
-                <a class="Iconos" href="https://www.youtube.com/" target="_blank">
-                    <img src="images/iconos/youtubeicon.png" alt="YouTube icon" />
-                </a>
-            </div>
-            <nav class="logo">
-                <div id="menu-mobile" class="menu-mobile-icon">
-					<a href="#">
-						<img class="menu-mobile-icon" src="images/iconos/menumobile.jpg" alt="" />
-					</a>    
-                </div>
-                
-                <div class="logoSuperior">
-                    <a href="#">
-                        <label class="pre-titulo">Soki'</label>
-                        <label class="post-titulo">s</label>
-                    </a>
-                </div>
-                <hr>
-                <div class="navegacion">
-                    <ul class="navegacion_menu">
-                        <li id="menu1"><a href="nosotros.html">NOSOTROS</a></li>
-                        <li id="menu1"><a href="catalogo.html">CATALOGO</a></li>
-                        <li id="menu2"></li>
-                        <li id="menu1"><a href="locales.html">LOCALES</a></li>
-                        <li id="menu1"><a href="contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
-                <hr>
-            </nav>
-        </div>
-    </header>
 
-    <div class="container-slider">
-        <ul class="slider">
-            <li id="slide1">
-                <img src="images/slide/s1.jpg">
-            </li>
-            <li id="slide2">
-                <img src="images/slide/s2.jpg">
-            </li>
-            <li id="slide3">
-                <img src="images/slide/s3.jpg">
-            </li>
-        </ul>
-        <ul class="menu">
-            <li>
-                <a href="#slide1">1</a>
-            </li>
-            <li>
-                <a href="#slide2">2</a>
-            </li>
-            <li>
-                <a href="#slide3">3</a>
-            </li>
-        </ul>
+        <div class="row">
+            <footer>
+                <!-- GRID 2 -->
+                <div class="grid2">
+                    <div></div>
+                    <div class="logoInferior">
+                        <a href="#">
+                            <label class="pre-titulo">Soki'</label>
+                            <label class="post-titulo">s</label>
+                        </a>
+                        <h4 label>PASTELERIA ARTESANAL</h4 label>
+                        <h5 label>BUENOS AIRES</h5 label>
+                    </div>
+
+                    <div class="SocialMedia">
+                        <div class="SocialMedia_Iconos">
+                            <a class="Iconos" href="https://web.whatsapp.com/" target="_blank">
+                                <img src="images/iconos/whatsappicon.png" alt="whatsapp icon" />
+                            </a>
+                            <a class="Iconos" href="https://es-la.facebook.com/" target="_blank">
+                                <img src="images/iconos/facebookicon.png" alt="Facebook icon" />
+                            </a>
+                            <a class="Iconos" href="https://www.instagram.com/?hl=es-la" target="_blank">
+                                <img src="images/iconos/instagramicon.png" alt="Instagram icon" />
+                            </a>
+                            <a class="Iconos" href="https://www.youtube.com/" target="_blank">
+                                <img src="images/iconos/youtubeicon.png" alt="YouTube icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
 
-    <!-- GRID -->
-    <div class="grid"> 
-        <!-- PRIMERA FILA-->
-        <div></div>
-        <div></div>
-        <div><h2>CATALOGO</h2></div>
-        <div></div>
-        <div></div>
-        <!-- SEGUNDA FILA -->
-        <div></div>
-        <div>
-            <img id="fotoproducto" src="images/productos/producto1/cupcakes1.jpg"
-            alt="Foto de Producto1"/>
-            <a id="botones1" class="botones-productos" href="catalogo.html">CUPCAKES</a>
-        </div>
-        <div>
-            <img id="fotoproducto" src="images/productos/producto2/cookies1.jpg"
-            alt="Foto de Producto2">
-            <a id="botones2" class="botones-productos" href="catalogo.html">GALLETAS</a> 
-        </div>
-        <div>
-            <img id="fotoproducto" src="images/productos/producto3/cake.jpg" alt="Foto de Producto2">
-            <a id="botones3" class="botones-productos" href="catalogo.html">TORTAS</a> 
-        </div>
-        <div></div>
-    </div> 
-
-    <!-- <div class="grid2"> 
-        <div class="section">
-            <div>adds1</div>
-            <div>sdsds2</div>
-            <div><h2>CATALOGO</h2></div>
-            <div>dsds4</div>
-            <div>sdsds5</div>
-            <div>
-                <table class="tabla">
-                    <tr class="contenedor-productos">
-                        <td class="fotos">
-                            <img id="fotoproducto" src="images/productos/producto1/cupcakes1.jpg"
-                                alt="Foto de Producto1">
-                            <a id="botones1" class="botones-productos" href="catalogo.html">CUPCAKES</a>
-                        </td>
-                        <td class="fotos">
-                            <img id="fotoproducto" src="images/productos/producto2/cookies1.jpg"
-                                alt="Foto de Producto2">
-                            <a id="botones2" class="botones-productos" href="catalogo.html">GALLETAS</a>
-                        </td>
-                        <td class="fotos">
-                            <img id="fotoproducto" src="images/productos/producto3/cake.jpg" alt="Foto de Producto2">
-                            <a id="botones3" class="botones-productos" href="catalogo.html">TORTAS</a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>  -->
-
-    <div class="contenedor-formulario margen-izq-20">
-        <h2 class="margen-top-100">CONTACTO</h2>
-        <form action="#" method="post">
-            <table cellpadding="10" cellspacing="10">
-                <tr>
-                    <td>NOMBRE:</td>
-                    <td>
-                        <input type="text" value="" id="nombre" name="nombre" placeholder="Ingresá acá tu Nombre!" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>EMAIL:</td>
-                    <td>
-                        <input type="email" value="" id="email" name="email" placeholder="Ingresá acá tu Email!" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>TELEFONO:</td>
-                    <td>
-                        <input type="text" value="" id="telefono" placeholder="Ingresá acá tu Telefono!" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>MENSAJE:</td>
-                    <td>
-                        <textarea id="mensaje" placeholder="Ingresá acá tu Mensaje!" rows="4"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input class="botones-formulario" type="reset" value="Restablecer" />
-                        <input class="botones-formulario" type="submit" value="Enviar" />
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
-
-    <!-- GRID 2 -->
-    <footer>
-        <div class="grid2">
-            <div></div>
-            <div class="logoInferior">
-                <a href="#">
-                    <label class="pre-titulo">Soki'</label>
-                    <label class="post-titulo">s</label>
-                </a>
-                <h4 label>PASTELERIA ARTESANAL</h4 label>
-                <h5 label>BUENOS AIRES</h5 label>
-            </div>
-            
-            <div class="SocialMedia">
-                <div class="SocialMedia_Iconos">
-                    <a class="Iconos" href="https://web.whatsapp.com/" target="_blank">
-                        <img src="images/iconos/whatsappicon.png" alt="whatsapp icon" />
-                    </a>
-                    <a class="Iconos" href="https://es-la.facebook.com/" target="_blank">
-                        <img src="images/iconos/facebookicon.png" alt="Facebook icon" />
-                    </a>
-                    <a class="Iconos" href="https://www.instagram.com/?hl=es-la" target="_blank">
-                        <img src="images/iconos/instagramicon.png" alt="Instagram icon" />
-                    </a>
-                    <a class="Iconos" href="https://www.youtube.com/" target="_blank">
-                        <img src="images/iconos/youtubeicon.png" alt="YouTube icon" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
 
 </body>
 
