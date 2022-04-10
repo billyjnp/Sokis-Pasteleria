@@ -175,7 +175,6 @@ header {
     text-shadow: 7px 4px 5px rgb(241, 191, 206);
     color: rgb(199, 0, 57);
     margin-left: 0;
-    display: inline-block;
 } 
 
 .logoInferior a {
@@ -189,21 +188,21 @@ header {
     text-shadow: 7px 4px 5px rgb(241, 191, 206);
     color: rgb(199, 0, 57);
     margin-left: 0;
-    display: inline-block;
 } 
 
 .navegacion_menu {
     list-style-type: none; 
     display: inline-flex; 
     padding-left: 0;
-    }
+    margin-bottom: 0px!important;    
+}
 
 #menu1 a {
     padding: 10px; text-decoration: none;
     display: inline-block;
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #menu2 {
@@ -215,7 +214,7 @@ header {
     margin: auto;
     margin-top: 20px;
     background-color: white;
-    width: 500px;
+    width: 560px;
     padding: 30px;
     margin-top: 40px;
     border-radius: 5%;
@@ -439,6 +438,7 @@ a .post-titulo {
 
     .navegacion_menu {
         display: block;
+        margin-bottom: 0px!important;
     }
     
     .logoSuperior{
