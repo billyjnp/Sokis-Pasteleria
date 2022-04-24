@@ -1,2 +1,27 @@
-$color_header: #fcd9f4;
-$color_footer: #fcd9f4;
+$color-1: #fcd9f4;
+$color-2: #c2185b;
+$color-3: #ad1457;
+$color-4: #880e4f;
+$color-5: #ffab91;
+$color-6: #ec407a;
+$color-7: #c70039;
+$color-8: #f1bfce;
+
+// APLICANDO MAPS Y MIXIN//
+$estilos: (
+  principal: $color-1,
+  secundario: $color-4,
+);
+
+@mixin fondo($color){
+  @if map-has-key($estilos, $color){
+    background-color: map-get($estilos, $color);
+  } 
+}
+
+.header-fondo{
+  @include fondo(principal);
+}
+.footer-fondo{
+  @include fondo(principal);
+}

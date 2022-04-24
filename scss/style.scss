@@ -14,7 +14,6 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    background-color: $color_header;
 }
 
 .h1 {
@@ -206,6 +205,11 @@ header {
     font-size: 20px;
 }
 
+//APLICANDO EXTEND//
+#menu1 a:hover {
+    @extend .hover-textos;
+}
+
 #menu2 {
     margin-left: 100px;
     margin-right: 80px;
@@ -350,6 +354,16 @@ ul.slider li:target {
     text-decoration: none;
 }
 
+//APLICANDO EXTEND//
+.botones-productos:hover{
+    @extend .hover-textos;
+}
+
+.hover-textos {
+    color: $color-4;
+    text-decoration: underline;
+}
+
 #nombre,
 #email,
 #telefono,
@@ -367,7 +381,7 @@ ul.slider li:target {
 
 footer {
     text-align: center;
-    background-color: $color_footer;
+    // background-color: $color_footer;
     padding-top: 50px;
 }
 

@@ -1,0 +1,8 @@
+SEO
+
+En el archivo index.html sume el SEO con las siguientes caracteristicas:
+
+1.- DESCRIPTION: Mediante la etiqueta META 'name="Descrition"', agregue lo siguiente "Soki's Pasteleria Artesanal en Buenos Aires"; 
+	la cual explica de manera consiza el contenido del sitio WEB.
+2.- KEYWORDS: Mediante la etiqueta META 'name="keywords"', agregue todas las palabras claves que acompañan a mi sitio WEB.
+3.- TITLE: Coloque el nombre ETIQUETA de mi sitio WEB.
