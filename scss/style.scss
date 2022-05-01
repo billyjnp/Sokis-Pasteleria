@@ -436,6 +436,15 @@ a .post-titulo {
     .menu-mobile-icon {
         display: none;
     }
+
+    .logoInferior {
+        width: 100%;    
+    }
+
+    .video {
+        width: 300px !important;
+        height: auto !important;
+    }
 }
 
 @media screen and (max-width: 510px) {
