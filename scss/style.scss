@@ -432,22 +432,27 @@ a .post-titulo {
     padding-right: 250px;
 }
 
-@media screen and (min-width:511px) {
+@media screen and (min-width:601px) {
     .menu-mobile-icon {
         display: none;
     }
-
-    .logoInferior {
-        width: 100%;    
-    }
-
-    .video {
-        width: 300px !important;
-        height: auto !important;
+    #video-desktop {
+        display: block!important;
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 600px) {
+    .grid2 {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 180px;
+        text-align: center;
+    }
+
+    #video-mobile {
+        display: block!important;
+    }
+
     .franjaSuperior {
         width: 100%;
         text-align: center;
@@ -540,15 +545,11 @@ a .post-titulo {
     }
 
     .grid-nosotros {
-        display: grid;
+        display: inline-block;
         grid-template-columns: 100%;
         grid-template-rows: 320px;
         text-align: center;
         margin: 20px;
-
-        &:iframe {
-            width: 350px !important;
-        }
     }
 
     .locales-descripcion-container {
