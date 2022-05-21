@@ -42,7 +42,7 @@
                         </a>
                     </div>
                     <nav class="logo">
-                        <div id="menu-mobile" class="menu-mobile-icon">
+                        <div id="menu-mobile" class="menu-mobile-icon" onclick="javascript:menu();">
                             <a href="#">
                                 <img class="menu-mobile-icon" src="images/iconos/menumobile.jpg" alt="" />
                             </a>    
@@ -54,14 +54,14 @@
                                 <label class="post-titulo">s</label>
                             </a>
                         </div>
-                        <hr>
-                        <div class="navegacion">
+                        <hr id="hr-separador">
+                        <div class="navegacion"> 
                             <ul class="navegacion_menu">
-                                <li id="menu1"><a href="nosotros.html">NOSOTROS</a></li>
-                                <li id="menu1"><a href="catalogo.html">CATALOGO</a></li>
+                                <li id="menu1"><a class="btn-2" href="nosotros.html">NOSOTROS</a></li>
+                                <li id="menu1"><a class="btn-2" href="catalogo.html">CATALOGO</a></li>
                                 <li id="menu2"></li>
-                                <li id="menu1"><a href="locales.html">LOCALES</a></li>
-                                <li id="menu1"><a href="contacto.html">CONTACTO</a></li>
+                                <li id="menu1"><a class="btn-2" href="locales.html">LOCALES</a></li>
+                                <li id="menu1"><a class="btn-2" href="contacto.html">CONTACTO</a></li>
                             </ul>
                         </div>
                         <hr>
@@ -80,8 +80,9 @@
                         style="display:none;"width="500" height="300" src="https://www.youtube.com/embed/QTe6H3kISdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
                     </div>    
                     <div class="video-descripcion">
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ducimus! Reiciendis consequuntur suscipit voluptatem, doloremque ducimus iure repellat facere, repellendus sint cumque ea! Quisquam facere, quasi accusamus eveniet libero harum.</span>					
+                        <h2>Somos Soki's Pasteleria!!</h2>
+                        <span>Fundada en Venezuela en el año 2014. Elaboramos y comercializamos productos de pastelería y servicios de catering, con estándares de calidad, con la tradición del sabor artesanal a fin de satisfacer a nuestros clientes. 
+                        Usamos materia prima de excelente calidad, con una fuerza laboral comprometida y calificada!...</span>					
                     </div>
                 </div>
             </div>
@@ -124,6 +125,7 @@
     
     <!-- Bootstrap Bundle with Popper -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
